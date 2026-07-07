@@ -1,0 +1,103 @@
+:root {
+    --azul-cineplanet: #0346b3;
+    --rojo-cineplanet: #bd0f0f;
+    --rojo-hover: #910909;
+    --gris-fondo: #f8f9fa;
+    --gris-borde: #cccccc;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--gris-fondo);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo-container {
+    background-color: var(--azul-cineplanet);
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.menu {
+    background-color: var(--azul-cineplanet);
+    display: flex;
+    gap: 20px;
+    padding: 12px 30px;
+    border-radius: 30px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.contenedor {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--gris-borde);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.titulo-seccion {
+    color: var(--azul-cineplanet);
+    font-size: 24px;
+    border-bottom: 2px solid var(--azul-cineplanet);
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.btn-rojo {
+    background-color: var(--rojo-cineplanet);
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-rojo:hover {
+    background-color: var(--rojo-hover);
+}
+
+/* Formulario CRUD */
+.form-grupo {
+    margin-bottom: 15px;
+}
+
+.form-grupo label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid var(--gris-borde);
+    border-radius: 6px;
+}
